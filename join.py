@@ -24,8 +24,8 @@ def decrypt_data(fileData):
         return decryptedData
 
 def main():
-    address = '192.168.178.154'
-    port = 50754
+    address = '192.0.0.1'
+    port = 1001
 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
