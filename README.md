@@ -1,13 +1,13 @@
 # mrrobot-chatroom
-Chatroom from the famous Mr.Robot TV show.
+A recreation of the chat room Darlene uses to connect to the dark army. 
 
 # Setup
 
-## 1.Download files
+## 1. Download files
 
 `git clone https://github.com/rysecx/mrrobot-chatroom && cd mrrobot-chatroom`
 
-## 2.Server setup 
+## 2. Server setup 
 
 At first you have to change the server ip address and port to your destinations.
 Then you can setup the server by running the following code:
@@ -17,7 +17,7 @@ Then you can setup the server by running the following code:
 This will create the files *key.txt*, *rooms.txt*, *validUsers.txt*, *bannedUsers.txt* and *user.txt*.
 They are necessary for the message encryption and user authentification.
 
-## 3.Client setup
+## 3. Client setup
 
 To setup the client you have to change the ip address and port again. 
 Then you can run the following code to setup the rest of it:
