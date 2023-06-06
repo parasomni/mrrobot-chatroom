@@ -20,7 +20,7 @@ def log(msg):
     return log_
 
 def encrypt_data(fileData):
-        with open('key.txt', 'rb') as keyFile:
+        with open('/etc/join/key-chatroom.txt', 'rb') as keyFile:
             key = keyFile.read()
         keyFile.close()
         fernet = Fernet(key)
@@ -28,7 +28,7 @@ def encrypt_data(fileData):
         return encryptedData
 
 def decrypt_data(fileData):
-        with open('key.txt', 'rb') as keyFile:
+        with open('/etc/join/key-chatroom.txt', 'rb') as keyFile:
             key = keyFile.read()
         keyFile.close()
         fernet = Fernet(key)
@@ -36,7 +36,7 @@ def decrypt_data(fileData):
         return decryptedData
 
 def valid_check(user):
-    with open('validUsers.txt', 'r') as f:
+    with open('/etc/join/validUsers.txt', 'r') as f:
         userFile = f.read()
     f.close()
     users = []
@@ -55,7 +55,7 @@ def valid_check(user):
         return False
 
 def banned_check(user):
-    with open('bannedUsers.txt', 'r') as f:
+    with open('/etc/join/bannedUsers.txt', 'r') as f:
         userFile = f.read()
     f.close()
     users = []
@@ -88,7 +88,7 @@ def userCheck(user):
         return invalid
 
 def room_check(room):
-    with open('rooms.txt', 'r') as f:
+    with open('/etc/join/rooms.txt', 'r') as f:
         roomFile = f.read()
     f.close()
     rooms = []
