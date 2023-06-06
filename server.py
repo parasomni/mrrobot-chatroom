@@ -107,8 +107,8 @@ def room_check(room):
         return False
 
 def main():
-    host = '192.168.178.154'
-    port = 50754
+    host = '192.0.0.1'
+    port = 1001
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
     server.listen()
