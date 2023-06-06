@@ -16,7 +16,7 @@ with open("/etc/join/key-chatroom.txt", "wb") as f:
     f.write(key)
 f.close()
 check_dir("/etc/join/")
-print("private key written to key.txt")
+print("private key written to /etc/join/key-chatroom.txt")
 os.system('cp server.py /usr/bin/mrrobot-server')
 os.system('chmod +x /usr/bin/mrrobot-server')
 print("setting up triggers")
