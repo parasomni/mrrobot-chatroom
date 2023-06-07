@@ -28,6 +28,8 @@ Then you can run the following code to setup the rest of it:
 
 You can now connect to the example server with `join fsociety`
 
+To leave a server just type `exit` in the prompt.
+
 Note: All files are csv files. Therefore it has to be a comma between every value.
 
 Enjoy!
