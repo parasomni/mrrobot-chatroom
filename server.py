@@ -8,7 +8,7 @@ import time
 from cryptography.fernet import Fernet
 
 def write_log(log):
-    with open ('chat_log.txt', 'ab') as logFile:
+    with open ('/etc/join/chat_log.txt', 'ab') as logFile:
         nl = '\r\n'
         log += nl.encode()
         logFile.write(log)
