@@ -1,5 +1,5 @@
 # mrrobot-chatroom
-A recreation of the chat room Darlene uses to connect to the dark army. 
+A recreation of the chat room Darlene, Cisco and the Dark Army uses to interact with each other. 
 
 # Setup
 
